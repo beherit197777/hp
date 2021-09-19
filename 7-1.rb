@@ -2,10 +2,14 @@
 # И выводит сумму всех чисел этого массива. Число N спрашивается у пользователя из консоли.
 puts "Введите N"
 x = gets.chomp.to_i
+array = []
 count = 1
-a = []
+summ = 0
 while count <= x do
+  array << count
+  summ += count
   count += 1
-  c =  a << count
-  puts c.sum
 end
+
+p array.to_s
+p array.sum
